@@ -3,12 +3,13 @@ body {
     margin: 0;
     padding: 0;
     background: #EAF6FF;
-    color: #023047;
+    color: #000000;
     line-height: 1.6;
 }
 
 h1, h2, h3, h4 {
     margin: 0;
+    color: #000000;
 }
 
 main {
@@ -31,7 +32,7 @@ header {
     }
 
     header nav a {
-        color: #FFF59D;
+        color: #FFFFFF;
         text-decoration: none;
         font-weight: bold;
         margin-left: 20px;
@@ -40,7 +41,7 @@ header {
 
         header nav a:hover,
         header nav a:focus {
-            color: #FFFCF2;
+            color: #FFD166;
             outline: none;
         }
 
@@ -109,6 +110,7 @@ footer {
 
     .feature-box h4 {
         margin-bottom: 0.5rem;
+        color: #000000;
     }
 
 .cta {
@@ -160,7 +162,7 @@ figcaption {
     text-align: center;
     font-size: 0.9rem;
     margin-top: 0.5rem;
-    color: #023047;
+    color: #000000;
 }
 
 form {
@@ -176,6 +178,7 @@ form {
         display: block;
         margin: 10px 0 5px 0;
         font-weight: bold;
+        color: #000000;
     }
 
 input, textarea {
@@ -185,7 +188,13 @@ input, textarea {
     border-radius: 5px;
     margin-bottom: 15px;
     font-size: 1rem;
+    color: #000000;
 }
+
+    input::placeholder,
+    textarea::placeholder {
+        color: #555555;
+    }
 
 button {
     padding: 10px 20px;
@@ -218,11 +227,13 @@ button {
 
     .map-section h2 {
         margin-bottom: 0.5rem;
+        color: #000000;
     }
 
     .map-section p {
         max-width: 600px;
         margin: 0 auto 1rem auto;
+        color: #000000;
     }
 
     .map-section iframe {
@@ -236,6 +247,7 @@ button {
 #feedback {
     font-weight: bold;
     margin-top: 10px;
+    color: #000000;
 }
 
 @media (max-width: 600px) {
