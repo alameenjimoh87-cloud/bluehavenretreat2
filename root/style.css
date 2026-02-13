@@ -2,14 +2,14 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: #EAF6FF;
-    color: #000000;
+    background: #000000;
+    color: #87CEEB;
     line-height: 1.6;
 }
 
 h1, h2, h3, h4 {
     margin: 0;
-    color: #000000;
+    color: #87CEEB;
 }
 
 main {
@@ -20,19 +20,19 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #0077B6;
-    color: #FFFFFF;
+    background: #001F3F;
+    color: #87CEEB;
     padding: 1rem 2rem;
 }
 
     header .logo {
         font-family: 'Arial Black', Arial, sans-serif;
         font-size: 2rem;
-        color: #FFD166;
+        color: #00BFFF;
     }
 
     header nav a {
-        color: #FFFFFF;
+        color: #87CEEB;
         text-decoration: none;
         font-weight: bold;
         margin-left: 20px;
@@ -41,13 +41,13 @@ header {
 
         header nav a:hover,
         header nav a:focus {
-            color: #FFD166;
+            color: #00BFFF;
             outline: none;
         }
 
 footer {
-    background: #0077B6;
-    color: #FFFFFF;
+    background: #001F3F;
+    color: #87CEEB;
     text-align: center;
     padding: 1rem;
     margin-top: 3rem;
@@ -65,13 +65,13 @@ footer {
     display: block;
     margin: 1.5rem auto;
     border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,112,182,0.3);
+    box-shadow: 0 5px 15px rgba(0,191,255,0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
     .home-image:hover {
         transform: scale(1.03);
-        box-shadow: 0 8px 20px rgba(0,112,182,0.5);
+        box-shadow: 0 8px 20px rgba(0,191,255,0.5);
     }
 
 .home-details {
@@ -97,10 +97,10 @@ footer {
 }
 
 .feature-box {
-    background: #FFFFFF;
+    background: #111111;
     padding: 1.5rem;
     border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,112,182,0.15);
+    box-shadow: 0 5px 15px rgba(0,191,255,0.15);
     transition: transform 0.3s ease;
 }
 
@@ -110,7 +110,11 @@ footer {
 
     .feature-box h4 {
         margin-bottom: 0.5rem;
-        color: #000000;
+        color: #87CEEB;
+    }
+
+    .feature-box p {
+        color: #87CEEB;
     }
 
 .cta {
@@ -120,8 +124,8 @@ footer {
 .cta-button {
     display: inline-block;
     padding: 12px 28px;
-    background: #0096C7;
-    color: #FFFFFF;
+    background: #00BFFF;
+    color: #000000;
     text-decoration: none;
     border-radius: 8px;
     font-weight: bold;
@@ -130,7 +134,7 @@ footer {
 
     .cta-button:hover,
     .cta-button:focus {
-        background: #023E8A;
+        background: #87CEEB;
         transform: translateY(-2px);
     }
 
@@ -145,13 +149,13 @@ footer {
         width: 100%;
         height: auto;
         border-radius: 15px;
-        box-shadow: 0 5px 15px rgba(0, 112, 182, 0.3);
+        box-shadow: 0 5px 15px rgba(0,191,255,0.3);
         transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
         .gallery img:hover {
             transform: scale(1.05);
-            box-shadow: 0 8px 20px rgba(0, 112, 182, 0.5);
+            box-shadow: 0 8px 20px rgba(0,191,255,0.5);
         }
 
 figure {
@@ -162,33 +166,34 @@ figcaption {
     text-align: center;
     font-size: 0.9rem;
     margin-top: 0.5rem;
-    color: #000000;
+    color: #87CEEB;
 }
 
 form {
     max-width: 500px;
     margin: 2rem auto;
     padding: 1.5rem;
-    background: #FFFFFF;
+    background: #111111;
     border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(0,191,255,0.1);
 }
 
     form label {
         display: block;
         margin: 10px 0 5px 0;
         font-weight: bold;
-        color: #000000;
+        color: #87CEEB;
     }
 
 input, textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #0077B6;
+    border: 1px solid #00BFFF;
     border-radius: 5px;
     margin-bottom: 15px;
     font-size: 1rem;
     color: #000000;
+    background: #E0F7FF;
 }
 
     input::placeholder,
@@ -198,8 +203,8 @@ input, textarea {
 
 button {
     padding: 10px 20px;
-    background: #0096C7;
-    color: #FFFFFF;
+    background: #00BFFF;
+    color: #000000;
     border: none;
     cursor: pointer;
     border-radius: 5px;
@@ -209,7 +214,7 @@ button {
 
     button:hover,
     button:focus {
-        background: #023E8A;
+        background: #87CEEB;
     }
 
     a:focus,
@@ -227,13 +232,13 @@ button {
 
     .map-section h2 {
         margin-bottom: 0.5rem;
-        color: #000000;
+        color: #87CEEB;
     }
 
     .map-section p {
         max-width: 600px;
         margin: 0 auto 1rem auto;
-        color: #000000;
+        color: #87CEEB;
     }
 
     .map-section iframe {
@@ -241,13 +246,13 @@ button {
         max-width: 750px;
         height: 400px;
         border-radius: 20px;
-        box-shadow: 0 5px 15px rgba(0,112,182,0.3);
+        box-shadow: 0 5px 15px rgba(0,191,255,0.3);
     }
 
 #feedback {
     font-weight: bold;
     margin-top: 10px;
-    color: #000000;
+    color: #87CEEB;
 }
 
 @media (max-width: 600px) {
