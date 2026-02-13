@@ -9,7 +9,7 @@
 <body>
 
     <header>
-        <h1 class="logo">Blue Haven Retreat</h1>
+        <h1 class="logo">Blue Haven</h1>
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About & Gallery</a>
@@ -38,9 +38,9 @@
             <p>Visit Blue Haven Retreat, your peaceful coastal escape.</p>
 
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2345.6789!2d-3.0!3d53.2!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTPCsDEyJzAwLjAiTiAzwrAwMCcwMC4wIlc!5e0!3m2!1sen!2suk!4v1234567890"
-                    width="500"
+                    width="600"
                     height="400"
-                    style="border:0; border-radius:20px;"
+                    style="border:0; border-radius: 20px; margin-top: 20px;"
                     allowfullscreen=""
                     loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"
@@ -48,7 +48,12 @@
             </iframe>
 
             <p class="attribution">
-                Map powered by <a href="https://developers.google.com/maps" target="_blank" rel="noopener">Google Maps</a> (Google LLC, 2025)
+                Map powered by
+                <a href="https://developers.google.com/maps"
+                   target="_blank"
+                   rel="noopener">
+                    Google Maps
+                </a> (Google LLC, 2025)
             </p>
         </section>
 
@@ -57,25 +62,6 @@
     <footer>
         <p>&copy; 2026 Blue Haven Retreat</p>
     </footer>
-
-    <script>
-        function validateForm() {
-            const name = document.getElementById('name').value.trim();
-            const email = document.getElementById('email').value.trim();
-            const message = document.getElementById('message').value.trim();
-            const feedback = document.getElementById('feedback');
-
-            if (!name || !email || !message) {
-                feedback.textContent = "Please fill in all fields.";
-                feedback.style.color = "red";
-                return false;
-            }
-
-            feedback.textContent = "Message sent successfully!";
-            feedback.style.color = "green";
-            return false;
-        }
-    </script>
 
 </body>
 </html>
