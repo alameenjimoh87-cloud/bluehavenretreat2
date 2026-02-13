@@ -13,4 +13,4 @@ function validateForm() {
     feedback.textContent = "Message sent successfully!";
     feedback.style.color = "green";
     return false;
-}
+} 
