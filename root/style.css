@@ -31,7 +31,7 @@ header {
     }
 
     header nav a {
-        color: #FFD166;
+        color: #FFF59D;
         text-decoration: none;
         font-weight: bold;
         margin-left: 20px;
@@ -41,6 +41,7 @@ header {
         header nav a:hover,
         header nav a:focus {
             color: #FFFCF2;
+            outline: none;
         }
 
 footer {
@@ -159,6 +160,7 @@ figcaption {
     text-align: center;
     font-size: 0.9rem;
     margin-top: 0.5rem;
+    color: #023047;
 }
 
 form {
@@ -176,8 +178,7 @@ form {
         font-weight: bold;
     }
 
-input,
-textarea {
+input, textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #0077B6;
@@ -232,20 +233,10 @@ button {
         box-shadow: 0 5px 15px rgba(0,112,182,0.3);
     }
 
-.attribution {
-    font-size: 0.8rem;
-    margin-top: 1rem;
+#feedback {
+    font-weight: bold;
+    margin-top: 10px;
 }
-
-    .attribution a {
-        color: #0077B6;
-        text-decoration: none;
-    }
-
-        .attribution a:hover,
-        .attribution a:focus {
-            text-decoration: underline;
-        }
 
 @media (max-width: 600px) {
     header {
@@ -256,4 +247,8 @@ button {
         header nav a {
             margin-left: 10px;
         }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
 }
