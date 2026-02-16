@@ -5,74 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Contact Blue Haven Retreat">
     <title>Blue Haven Retreat | Contact</title>
+
     <link rel="stylesheet" href="root/style.css">
     <script src="root/java.js" defer></script>
 </head>
 <body>
+
     <header>
         <h1 class="logo">Blue Haven</h1>
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About & Gallery</a>
-            <a href="contact.html">Contact</a>
+            <a href="contact.html" class="active">Contact</a>
         </nav>
     </header>
-    <main>
-        <section class="center">
+
+    <main class="contact-container">
+        <section class="contact-form-section">
             <h2>Contact Us</h2>
             <p>We’d love to hear from you.</p>
+
+            <form onsubmit="return validateForm()" aria-labelledby="contact-heading">
+                <h3 id="contact-heading">Reservation & Contact Form</h3>
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="stay">Are you requesting a reservation?</label>
+                    <select id="stay" name="stay">
+                        <option value="no">General enquiry</option>
+                        <option value="yes">Reservation request</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="checkin">Check-in Date</label>
+                        <input type="date" id="checkin" name="checkin">
+                    </div>
+                    <div class="form-group">
+                        <label for="checkout">Check-out Date</label>
+                        <input type="date" id="checkout" name="checkout">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="guests">Number of Guests</label>
+                    <input type="number" id="guests" name="guests" min="1" max="6">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="cta-button">Send Request</button>
+                <p id="feedback" aria-live="polite"></p>
+            </form>
         </section>
-        <form onsubmit="return validateForm()" aria-labelledby="contact-heading">
-            <h3 id="contact-heading">Reservation & Contact Form</h3>
-            <label for="name">Full Name</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" required>
-            <label for="stay">Are you requesting a reservation?</label>
-            <select id="stay" name="stay">
-                <option value="no">General enquiry</option>
-                <option value="yes">Reservation request</option>
-            </select>
-            <label for="checkin">Check-in Date</label>
-            <input type="date" id="checkin" name="checkin">
-            <label for="checkout">Check-out Date</label>
-            <input type="date" id="checkout" name="checkout">
-            <label for="guests">Number of Guests</label>
-            <input type="number" id="guests" name="guests" min="1" max="6">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-            <button type="submit">Send Request</button>
-            <p id="feedback" aria-live="polite"></p>
-        </form><section class="map-section">
-     
-    <h3>Find Us</h3>
-
-    <p>Visit Blue Haven Retreat, your peaceful coastal escape.</p>
-
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2345.6789!2d-3.0!3d53.2!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTPCsDEyJzAwLjAiTiAzwrAwMCcwMC4wIlc!5e0!3m2!1sen!2suk!4v1234567890"
-            width="600"
-            height="400"
-            style="border:0; border-radius: 20px; margin-top: 20px;"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            title="Location of Blue Haven Retreat">
-    </iframe>
-
-    <p class="attribution">
-        Map powered by
-        <a href="https://developers.google.com/maps"
-           target="_blank"
-           rel="noopener">
-            Google Maps
-        </a> (Google LLC, 2026)
-    </p>
-
-</section>
-
-    
-
+        <section class="map-section">
+            <h3>Find Us</h3>
+            <p>Visit Blue Haven Retreat, your peaceful coastal escape.</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2345.6789!2d-3.0!3d53.2!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTPCsDEyJzAwLjAiTiAzwrAwMCcwMC4wIlc!5e0!3m2!1sen!2suk!4v1234567890"
+                    loading="lazy"
+                    title="Location of Blue Haven Retreat">
+            </iframe>
+            <p class="attribution">
+                Map powered by
+                <a href="https://developers.google.com/maps"
+                   target="_blank"
+                   rel="noopener">
+                    Google Maps
+                </a> (Google LLC, 2026)
+            </p>
+        </section>
     </main>
+    <footer>
+        <p>&copy; 2026 Blue Haven Retreat</p>
+    </footer>
 
 </body>
 </html>
