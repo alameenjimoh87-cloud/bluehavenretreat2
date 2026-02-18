@@ -177,3 +177,19 @@ input, select, textarea {
         padding: 2rem 0.5rem;
     }
 }
+.gallery {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+    .gallery figure {
+        margin-bottom: 2rem;
+    }
+
+    .gallery img {
+        width: 100%;
+        height: auto;
+        border-radius: 6px;
+        display: block;
+    }
