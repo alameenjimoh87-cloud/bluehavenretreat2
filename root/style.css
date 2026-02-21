@@ -177,4 +177,16 @@ input, select, textarea {
         padding: 2rem 0.5rem;
     }
 }
+.spaced {
+    margin-top: 1.5rem;
+}
 
+.philosophy-text {
+    max-width: 800px;
+    margin: 1rem auto 2rem;
+}
+
+.gallery-subtext {
+    margin-bottom: 2rem;
+    color: #cbd5e1;
+}
